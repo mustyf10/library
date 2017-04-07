@@ -6,6 +6,7 @@ class Library {
 	String openingHours
 	String location
 	int studySpaces
+	Librarian librarian
 
 static hasMany=[books:Book,students:Student]
 
