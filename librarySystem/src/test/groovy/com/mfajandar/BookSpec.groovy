@@ -15,8 +15,15 @@ class BookSpec extends Specification {
     def cleanup() {
     }
 
-    void "test something"() {
-        expect:"fix me"
-            true == false
+    void toString() {
+    	when: "A book has a title, subject and an author"
+	def abook=new Book(
+	title:'Of Mice and Men',
+	author:'John Steinbeck',
+	subject:'English')
+
+	then:"The to string method will merge them."
+
+	abook.toString() =='Of Mice and Men,John Steinbeck,English'
     }
 }

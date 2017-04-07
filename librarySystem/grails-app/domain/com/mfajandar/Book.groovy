@@ -13,6 +13,10 @@ class Book {
 static hasMany=[bookReviews:BookReview,libraries:Library]
 static belongsTo=Library
 
+String toString(){
+	"$title,$subject,$author"
+}
+
     static constraints = {
 	title blank:false, nullable:false
 	subject blank:false, nullable:false
