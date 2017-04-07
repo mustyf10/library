@@ -1,7 +1,7 @@
 package com.mfajandar
 
 class BookReview {
-	string book
+	String book
 	Date dateCreated
 	String student
 	String review
