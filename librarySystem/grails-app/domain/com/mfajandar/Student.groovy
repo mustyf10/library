@@ -20,4 +20,8 @@ static belongsTo=Library
 	studentId blank:false, nullable:false, unique:true
 	course blank:false, nullable:false
     }
+
+String toString() {
+	return name
+}
 }

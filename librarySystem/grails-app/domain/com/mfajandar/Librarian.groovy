@@ -20,4 +20,8 @@ static belongsTo=Library
 	telephone blank:false, nullable:false
 	library blank:false, nullable:false
     }
+
+String toString() {
+	return name
+}
 }

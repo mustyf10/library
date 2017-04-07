@@ -6,7 +6,6 @@ class Library {
 	String openingHours
 	String location
 	int studySpaces
-	Librarian librarian
 
 static hasMany=[books:Book,students:Student]
 
@@ -17,4 +16,8 @@ static hasMany=[books:Book,students:Student]
 	location blank:false, nullable:false
 	studySpaces blank:false, nullable:false, minSize:1, maxSize:50
     }
+
+String toString() {
+	return nameOfBuilding
+}
 }

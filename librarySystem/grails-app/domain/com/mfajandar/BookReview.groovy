@@ -14,4 +14,8 @@ static belongsTo=Book
 	student blank:false, nullable:false
 	review blank:false, nullable:false, maxSize:5000, widget:'textarea'
     }
+
+String toString() {
+	return book
+}
 }
