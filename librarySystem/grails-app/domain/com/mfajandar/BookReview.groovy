@@ -1,10 +1,12 @@
 package com.mfajandar
 
 class BookReview {
-	String book
+	Book book
 	Date dateCreated
-	String student
+	Student student
 	String review
+
+static belongsTo=Book
 
     static constraints = {
 	book blank:false, nullable:false

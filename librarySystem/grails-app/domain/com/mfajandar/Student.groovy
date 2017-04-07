@@ -6,7 +6,11 @@ class Student {
 	String username
 	String password
 	int studentId
-	String course
+	Course course
+	Library library
+
+static hasMany=[books:Book,bookReviews:BookReview]
+static belongsTo=Library
 
     static constraints = {
 	name blank:false, nullable:false

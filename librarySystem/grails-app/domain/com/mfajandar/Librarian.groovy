@@ -7,7 +7,9 @@ class Librarian {
 	String username
 	String password
 	int telephone
-	String library	
+	Library library	
+
+static belongsTo=Library
 
     static constraints = {
 	name blank:false, nullable:false
