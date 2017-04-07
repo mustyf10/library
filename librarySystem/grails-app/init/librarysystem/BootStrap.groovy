@@ -3,7 +3,7 @@ package com.mfajandar
 class BootStrap {
 
     def init = { servletContext ->
-	def course1=new Course(
+	/*def course1=new Course(
 		title:'English',
 		code:'a1',
 		leader:'Leader Uno',
@@ -99,7 +99,7 @@ class BootStrap {
 		book:book2,
 		dateCreated:new Date('3/2/2017'),
 		student:student2,
-		review:'This book is boring!').save()
+		review:'This book is boring!').save()*/
 
 
     }
